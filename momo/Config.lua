@@ -1,19 +1,6 @@
---[[ by Faisal (Fivem ScRiPts https://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-https://discord.gg/NNRq4yhttps://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-joiinnn .. !!
---]] 
+--- By : 👑 Mr.TnT.#0002 , ! - TND xDヅ#6554
+--- Discord : https://discord.gg/qkqYGyn
+--- github : https://github.com/five-m
 Config = {
 -- Set this to true to enable some extra prints
 	DebugDisplay = false,
@@ -32,7 +19,7 @@ Config = {
 -- You can change the header image for the f3 menu here
 -- Use a 512 x 128 image!
 -- NOte this might cause an issue of the image getting stuck on peoples screens
-	CustomMenuEnabled = false,
+	CustomMenuEnabled = true,
 	MenuImage = "https://i.imgur.com/kgzvDwQ.png",
 -- You can change the menu position here
 	MenuPosition = "right", -- (left, right)
@@ -40,21 +27,8 @@ Config = {
 	ExpressionsEnabled = true,
 -- You can disable the Walking Styles menu here.
 	WalkingStylesEnabled = true,
-	MenuKeybind = 57 -- Get the button number here https://docs.fivem.net/game-references/controls/
+	MenuKeybind = 168 -- Get the button number here https://docs.fivem.net/game-references/controls/
 }
---[[ by Faisal (Fivem ScRiPts https://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-https://discord.gg/NNRq4yhttps://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-joiinnn .. !!
---]] 
+--- By : 👑 Mr.TnT.#0002 , ! - TND xDヅ#6554
+--- Discord : https://discord.gg/qkqYGyn
+--- github : https://github.com/five-m

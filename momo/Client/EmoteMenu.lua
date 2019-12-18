@@ -1,4 +1,4 @@
-rightPosition = {x = 1450, y = 100}
+rightPosition = {x = 1400, y = 500}
 leftPosition = {x = 0, y = 100}
 menuPosition = {x = 0, y = 200}
 
@@ -22,7 +22,7 @@ else
 end
 
 _menuPool = NativeUI.CreatePool()
-mainMenu = NativeUI.CreateMenu("dp Emotes", "", menuPosition["x"], menuPosition["y"], Menuthing, Menuthing)
+mainMenu = NativeUI.CreateMenu("FiveM Resources", "", menuPosition["x"], menuPosition["y"], Menuthing, Menuthing)
 _menuPool:Add(mainMenu)
 
 function ShowNotification(text)
@@ -56,10 +56,10 @@ Citizen.CreateThread(function()
 end)
 
 function AddEmoteMenu(menu)
-    local submenu = _menuPool:AddSubMenu(menu, "Emotes", "", "", Menuthing, Menuthing)
-    local dancemenu = _menuPool:AddSubMenu(submenu, "🕺 Dance Emotes", "", "", Menuthing, Menuthing)
-    local propmenu = _menuPool:AddSubMenu(submenu, "📦 Prop Emotes", "", "", Menuthing, Menuthing)
-    local favmenu = _menuPool:AddSubMenu(submenu, "🌟 Keybind", "Select an emote here to set it as your bound emote.", "", Menuthing, Menuthing)
+    local submenu = _menuPool:AddSubMenu(menu, "ﺕﺎﻛﺮﺤﻟﺍ", "", "", Menuthing, Menuthing)
+    local dancemenu = _menuPool:AddSubMenu(submenu, "🕺 ﺕﺎﺼﻗﺮﻟﺍ", "", "", Menuthing, Menuthing)
+    local propmenu = _menuPool:AddSubMenu(submenu, "📦 ﺽﺍﺮﻏﻻﺍ", "", "", Menuthing, Menuthing)
+    local favmenu = _menuPool:AddSubMenu(submenu, "🌟 ﺭﺍﺭﺯﻻﺍ", "Select an emote here to set it as your bound emote.", "", Menuthing, Menuthing)
     unbind2item = NativeUI.CreateItem("Reset keybind", "Reset keybind")
     unbinditem = NativeUI.CreateItem("❓ Prop Emotes can be located at the end", "Reset keybind")
     favmenu:AddItem(unbinditem)
@@ -125,7 +125,7 @@ function AddEmoteMenu(menu)
 end
 
 function AddCancelEmote(menu)
-    local newitem = NativeUI.CreateItem("Cancel Emote ", "~r~X~w~ Cancels the currently playing emote")
+    local newitem = NativeUI.CreateItem("ﺔﻛﺮﺤﻟﺍ ﺀﺎﻐﻟﺍ ", "~r~X~w~ ﺭﺯ ﻰﻠﻋ ﻂﻐﺿﺍ ﺔﻛﺮﺤﻟﺍ ﺀﺎﻐﻟﻻ")
     menu:AddItem(newitem)
     menu.OnItemSelect = function(sender, item, checked_)
         if item == newitem then
@@ -136,7 +136,7 @@ function AddCancelEmote(menu)
 end
 
 function AddWalkMenu(menu)
-    local submenu = _menuPool:AddSubMenu(menu, "Walking Styles", "", "", Menuthing, Menuthing)
+    local submenu = _menuPool:AddSubMenu(menu, "ﻰﺸﻤﻟﺍ ﺔﻘﻳﺮﻃ", "", "", Menuthing, Menuthing)
 
     walkreset = NativeUI.CreateItem("Normal (Reset)", "Reset to default")
     submenu:AddItem(walkreset)
@@ -163,7 +163,7 @@ function AddWalkMenu(menu)
 end
 
 function AddFaceMenu(menu)
-    local submenu = _menuPool:AddSubMenu(menu, "Moods", "", "", Menuthing, Menuthing)
+    local submenu = _menuPool:AddSubMenu(menu, "ﺝﺍﺰﻤﻟﺍ", "ﻪﺟﻮﻟﺍ ﺮﻴﺑﺎﻌﺗ ﺮﻴﻐﺘﺗ", "", Menuthing, Menuthing)
 
     facereset = NativeUI.CreateItem("Normal (Reset)", "Reset to default")
     submenu:AddItem(facereset)
@@ -186,12 +186,12 @@ function AddFaceMenu(menu)
 end
 
 function AddInfoMenu(menu)
-    local infomenu = _menuPool:AddSubMenu(menu, "Info / Update notes", "Check here for update notes (1.5.1a)", "", Menuthing, Menuthing)
-    contact = NativeUI.CreateItem("Suggestions?", "'dullpear_dev' on FiveM forums for any feature/emote suggestions! ✉️")
-    u151a = NativeUI.CreateItem("1.5.1a", "Fixed tryclothes/2, changed the guitar emotes slightly and changed facial expressions to 'moods'")
-    u151 = NativeUI.CreateItem("1.5.1", "Added /walk and /walks, for walking styles without menu")
-    u150 = NativeUI.CreateItem("1.5.0", "Added Facial Expressions menu (if enabled by server owner)")
-    u142 = NativeUI.CreateItem("1.4.2", "Added many new prop emotes (guitar-guitar3, book, bouquet, teddy, backpack, burger and more)")
+    local infomenu = _menuPool:AddSubMenu(menu, "FiveM Resources", "FiveM Resources", "", Menuthing, Menuthing)
+    contact = NativeUI.CreateItem("ﺕﺎﺣﺍﺮﺘﻗﺍ", "FiveM Resources")
+    u151a = NativeUI.CreateItem("ﺎﺒﻳﺮﻗ", "ﺎﺒﻳﺮﻗ")
+    u151 = NativeUI.CreateItem("ﺎﺒﻳﺮﻗ", "ﺎﺒﻳﺮﻗ")
+    u150 = NativeUI.CreateItem("ﺎﺒﻳﺮﻗ", "ﺎﺒﻳﺮﻗ")
+    u142 = NativeUI.CreateItem("ﺎﺒﻳﺮﻗ", "ﺎﺒﻳﺮﻗ")
     infomenu:AddItem(contact)
     infomenu:AddItem(u151a)
     infomenu:AddItem(u151)

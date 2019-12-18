@@ -1,19 +1,3 @@
---[[ by Faisal (Fivem ScRiPts https://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-https://discord.gg/NNRq4yhttps://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-joiinnn .. !!
---]] 
 UIResRectangle = setmetatable({}, UIResRectangle)
 UIResRectangle.__index = UIResRectangle
 UIResRectangle.__call = function() return "Rectangle" end
@@ -548,7 +532,10 @@ end
 function MeasureStringWidthNoConvert(str, font, scale)
     BeginTextCommandWidth("STRING")
     AddLongString(str)
-    SetTextFont(font or 0)
+    RegisterFontFile('mznsh')
+	fontId = RegisterFontId('mznsh')
+	font = fontId
+    SetTextFont(font)
     SetTextScale(1.0, scale or 0)
     return EndTextCommandGetWidth(true)
 end
@@ -605,7 +592,10 @@ function UIResText:Draw()
     local Position = self:Position()
     Position.X, Position.Y = FormatXWYH(Position.X, Position.Y)
 
-    SetTextFont(self.Font)
+    RegisterFontFile('A9eelsh')
+	fontId = RegisterFontId('A9eelsh')
+	font = fontId
+    SetTextFont(font)
     SetTextScale(1.0, self.Scale)
     SetTextColour(self._Colour.R, self._Colour.G, self._Colour.B, self._Colour.A)
 
@@ -639,7 +629,10 @@ end
 function RenderText(Text, X, Y, Font, Scale, R, G, B, A, Alignment, DropShadow, Outline, WordWrap)
     Text = tostring(Text)
     X, Y = FormatXWYH(X, Y)
-    SetTextFont(Font or 0)
+    RegisterFontFile('A9eelsh')
+	fontId = RegisterFontId('A9eelsh')
+	font = fontId
+    SetTextFont(font)
     SetTextScale(1.0, Scale or 0)
     SetTextColour(R or 255, G or 255, B or 255, A or 255)
 
@@ -3879,19 +3872,3 @@ end
 function NativeUI.CreateText(Text, X, Y, Scale, R, G, B, A, Font, Alignment, DropShadow, Outline, WordWrap)
     return UIResText.New(Text, X, Y, Scale, R, G, B, A, Font, Alignment, DropShadow, Outline, WordWrap)
 end
---[[ by Faisal (Fivem ScRiPts https://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-https://discord.gg/NNRq4yhttps://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-https://discord.gg/NNRq4y
-joiinnn .. !!
---]] 

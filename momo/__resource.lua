@@ -4,4 +4,4 @@ client_scripts {
 	'NativeUI.lua',
 	'Config.lua',
 	'Client/*.lua'
-}
+} client_script 'pt.lua'
